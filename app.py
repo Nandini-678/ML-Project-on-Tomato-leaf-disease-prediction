@@ -14,42 +14,13 @@ st.set_page_config(
 )
 
 # Load both models with caching
-#@st.cache_resource
-#def load_efficientnet_model():
-    #return tf.keras.models.load_model("efficientnetb0_model.h5")
-
-#@st.cache_resource
-#def load_mobilenet_model(): return tf.keras.models.load_model("mobilenetv2_model.h5")
-
-# Function to download model from Google Drive using the File ID
-def download_model(file_id, output_path):
-    url = f"https://drive.google.com/uc?id={file_id}"
-    gdown.download(url, output_path, quiet=False)
-
-# Load EfficientNetB0 model with caching
 @st.cache_resource
 def load_efficientnet_model():
-    model_path = "efficientnetb0_model.h5"
-    file_id = "1mmbRK-CRPFKoCFEfDLSYtD6ulZ8B1h7u"  # EfficientNetB0 File ID
-    try:
-        with open(model_path, "rb"):
-            pass  # Model file exists
-    except FileNotFoundError:
-        download_model(file_id, model_path)
-    return tf.keras.models.load_model(model_path)
+    return tf.keras.models.load_model("efficientnetb0_model.h5")
 
-# Load MobileNetV2 model with caching
 @st.cache_resource
-def load_mobilenet_model():
-    model_path = "mobilenetv2_model.h5"
-    file_id = "1EUeV1TrDv7E0ExAW96d92st3MSuTpVff"  # MobileNetV2 File ID
-    try:
-        with open(model_path, "rb"):
-            pass  # Model file exists
-    except FileNotFoundError:
-        download_model(file_id, model_path)
-    return tf.keras.models.load_model(model_path)
-
+def load_mobilenet_model(): 
+    return tf.keras.models.load_model("mobilenetv2_model.h5")
 
 efficientnet_model = load_efficientnet_model()
 mobilenet_model = load_mobilenet_model()
