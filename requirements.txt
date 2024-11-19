@@ -1,4 +1,6 @@
-numpy==1.26.3
-streamlit==1.30.0
-tensorflow==2.15.0.post1
-pillow
+streamlit==1.25.0
+tensorflow==2.18.0
+Pillow==9.5.0
+numpy==1.26.1
+gdown==4.7.1
+
