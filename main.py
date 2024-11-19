@@ -80,17 +80,18 @@ st.markdown(
     <style>
     /* App Background */
     .stApp {
-        background: rgb(245, 245, 245); /* Light gray background for light mode */
-        background: linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(230,230,230,1) 50%, rgba(245,245,245,1) 100%);
+        background: rgb(242,49,58);
+        background: radial-gradient(circle, rgba(242,49,58,1) 0%, rgba(233,148,177,1) 100%);
         color: black;
     }
     @media (prefers-color-scheme: dark) {
         .stApp {
-            background: rgb(33,33,33); /* Dark gray background for dark mode */
-            background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(55,55,55,1) 50%, rgba(33,33,33,1) 100%);
+            background: rgb(18,2,29);
+            background: linear-gradient(90deg, rgba(18,2,29,1) 0%, rgba(208,36,36,1) 50%, rgba(116,69,2,1) 100%);
             color: white;
         }
     }
+
     /* Header and Subheader Styling */
     .header-title {
         font-size: 40px;
@@ -103,6 +104,7 @@ st.markdown(
         text-align: center;
         margin-bottom: 1em;
     }
+
     /* Upload Section Styling */
     .upload-section {
         border: 2px dashed #ccc; /* Neutral border color */
@@ -117,6 +119,7 @@ st.markdown(
             background-color: rgba(0, 0, 0, 0.5); /* Dark transparent */
         }
     }
+
     /* Prediction Section Styling */
     .prediction-section {
         background-color: rgba(255, 255, 255, 0.9); /* Light transparent */
@@ -130,6 +133,7 @@ st.markdown(
             background-color: rgba(0, 0, 0, 0.5); /* Dark transparent */
         }
     }
+
     /* Sidebar Styling */
     .sidebar .css-1d391kg {
         background-color: rgba(240, 240, 240, 0.8); /* Light mode sidebar */
