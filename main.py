@@ -3,7 +3,7 @@ from tensorflow.keras.preprocessing.image import img_to_array # type: ignore
 import numpy as np
 import tensorflow as tf
 from PIL import Image
-import gdown
+
 
 # Set Streamlit page configuration
 st.set_page_config(
