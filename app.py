@@ -134,7 +134,7 @@ st.markdown(
 
 # Sidebar content
 with st.sidebar:
-    st.image("https://img.freepik.com/premium-photo/tomato-with-water-droplets-it-leaf-stem_927923-682.jpg", caption="Tomato Leaf Example")
+    st.image("https://img.freepik.com/premium-photo/tomato-with-water-droplets-it-leaf-stem_927923-682.jpg")
     st.write("""
         **How it works:**
         1. Upload an image of a tomato plant leaf.
