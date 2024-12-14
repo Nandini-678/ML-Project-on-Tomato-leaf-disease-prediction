@@ -89,11 +89,13 @@ The models' performance was evaluated using the following metrics:
 
 ### Front Page
 
-![Front_page](./images/Front page.png)
-![Upload Image](./images/upload image.png)
+![Front_page](./images/frontpage.png)
+![Upload Image](./images/uploadimage.png)
 
 ### Disease Detection Results comparion
 
 ![Results](./images/predictions.png)
 
 ---
+
+## Stremlit App link - "https://ml-project-on-tomato-leaf-disease-prediction-iv6npjz7jirwwzpyh.streamlit.app/"
